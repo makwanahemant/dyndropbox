@@ -1,0 +1,9 @@
+<h2>Select Book</h2>
+<p>
+  <%= form_for :buy, url: {action: "show"}, html: {method: "get"} do |n| %>
+  <%= n.label "Select a Book:" %>
+  <%= n.select :category_id, options_for_select(@categories.collect { |category| [category.name.titleize, category.id] }, 1), {}, { id: 'categories_select' } %>
+  <%= n.select :book_id, options_for_select(@books.collect { |book| [book.name.titleize, book.id] }, 0), {}, { id: 'books_select' } %>
+  <%= n.submit "Select!" %>
+  <% end %>
+</p>
