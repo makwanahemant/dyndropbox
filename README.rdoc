@@ -1,2 +1,2 @@
 == README
-Dyanmically select item from drop down for rails 4.2.6
+Dyanmically select item (book) from drop down of Categories for rails 4.2.6
